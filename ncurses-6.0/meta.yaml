@@ -1,0 +1,16 @@
+package:
+  name: ncurses
+  version: 6.0
+
+source:
+  fn: ncurses-6.0.tar.gz
+  url: http://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.0.tar.gz
+  patches:
+    - openbsd_nottydev.patch
+
+build:
+  number: 1
+
+about:
+  home: http://www.gnu.org/software/ncurses/
+  license: X11
