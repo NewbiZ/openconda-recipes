@@ -10,12 +10,6 @@ source:
 build:
   number: 0
 
-test:
-  commands:
-    - openssl version
-
 about:
   home: http://www.openssl.org/
   license: OpenSSL & SSLay
-
-# vim:set ts=8 sw=2 sts=2 tw=78 et:

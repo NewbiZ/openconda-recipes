@@ -2,10 +2,10 @@
 
 ./configure --prefix=$PREFIX \
     --without-debug \
+    --disable-overwrite \
     --without-ada \
     --without-manpages \
     --with-shared \
-    --disable-overwrite \
     --enable-termcap \
     --with-termlib
 

@@ -1,0 +1,22 @@
+package:
+  name: sqlite
+  version: 3.9.2
+
+source:
+  fn: sqlite-autoconf-3090200.tar.gz
+  url: https://www.sqlite.org/2015/sqlite-autoconf-3090200.tar.gz
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - readline
+    - ncurses
+  run:
+    - readline
+    - ncurses
+
+about:
+  home: http://www.sqlite.org
+  license: Public Domain

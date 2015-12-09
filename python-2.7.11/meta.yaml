@@ -1,0 +1,25 @@
+package:
+  name: python
+  version: 2.7.11
+
+source:
+  fn: Python-2.7.11.tgz
+  url: http://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - readline
+    - ncurses
+    - sqlite
+  run:
+    - readline
+    - ncurses
+    - sqlite
+
+about:
+  home: http://www.python.org/
+  license: PSF
+
