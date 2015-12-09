@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export CFLAGS="-I$PREFIX/include"
-export LDFLAGS="-I$PREFIX/lib"
+export LDFLAGS="-L$PREFIX/lib"
 
 ./configure --prefix=$PREFIX
 make
