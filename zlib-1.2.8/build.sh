@@ -1,5 +1,7 @@
 #!/bin/sh
 
-./configure --prefix=$PREFIX --libdir=$PREFIX/lib --includedir=$PREFIX/include
+./configure --prefix=$PREFIX
+
 make
 make install
+rm -rf $PREFIX/share

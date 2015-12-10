@@ -1,8 +1,9 @@
 #!/bin/sh
 
-./configure --prefix=$PREFIX \
-    CFLAGS="-I$PREFIX/include" \
-    LDFLAGS="-L$PREFIX/lib -Wl,-rpath,'\$\$ORIGIN'/../lib -Wl,-z,origin"
+export CFLAGS="-I$PREFIX/include"
+export LDFLAGS="-L$PREFIX/lib -Wl,-z,origin -Wl,-rpath,'\$\$ORIGIN/../lib'"
+
+./configure --prefix=$PREFIX
 
 make
 make install

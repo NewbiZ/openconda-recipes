@@ -7,7 +7,13 @@
     --without-manpages \
     --with-shared \
     --enable-termcap \
-    --with-termlib
+    --with-termlib \
+    --without-progs \
+    --without-tests
 
 make
 make install
+
+ln -s libncurses.so.6.0 $PREFIX/lib/libcurses.so
+ln -s libncurses.so.6.0 $PREFIX/lib/libcurses.so.6
+ln -s libncurses.a $PREFIX/lib/libcurses.a
