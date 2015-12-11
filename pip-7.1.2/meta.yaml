@@ -1,0 +1,22 @@
+package:
+  name: pip
+  version: 7.1.2
+
+source:
+  url: https://pypi.python.org/packages/source/p/pip/pip-7.1.2.tar.gz
+  md5: 3823d2343d9f3aaab21cf9c917710196
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+build:
+  number: 0
+
+about:
+  home: https://pip.pypa.io
+  license: MIT
+
+

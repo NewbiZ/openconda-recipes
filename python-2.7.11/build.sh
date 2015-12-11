@@ -4,9 +4,7 @@ export CFLAGS="-I$PREFIX/include"
 export LDFLAGS="-L$PREFIX/lib -Wl,-z,origin -Wl,-rpath,$PREFIX/lib,--no-as-needed"
 export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig"
 
-./configure --prefix=$PREFIX \
-    --enable-shared \
-    --enable-unicode=ucs4
+./configure --prefix=$PREFIX --enable-shared
 
 export LD_LIBRARY_PATH="$PREFIX/lib"
 
